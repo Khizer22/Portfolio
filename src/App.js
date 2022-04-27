@@ -1,17 +1,14 @@
 import './App.css';
 import Container from 'react-bootstrap/Container';
-import Header from './components/sideBar/Header';
+// import Header from './components/sideBar/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MainPage from './components/sideBar/mainPage/MainPage';
-import NoticeCard from './components/sideBar/cards/NoticeCard';
-import CardList from './components/sideBar/cards/CardList';
-import Footer from './components/sideBar/mainPage/Footer';
-import SideBar from './components/sideBar/mainPage/Sidebar';
-import HomePage from './components/sideBar/mainPage/homePage/homePage';
+import Footer from './components/footer/Footer';
+import SideBar from './components/sideBar/Sidebar';
+import HomePage from './components/pages/homePage/homePage';
 import { Component } from 'react';
-import FaceLife from './components/sideBar/mainPage/Pages/FaceLife';
-import ReplacementHeads from './components/sideBar/mainPage/Pages/ReplacementHeads';
-import Ascendance from './components/sideBar/mainPage/Pages/Ascendance/Ascendance';
+import FaceLife from './components/pages/faceLife/FaceLife';
+import ReplacementHeads from './components/pages/replacementHeads/ReplacementHeads';
+import Ascendance from './components/pages/ascendance/Ascendance';
 
 const initialState = {
   route: 'home'
@@ -75,7 +72,7 @@ class App extends Component {
           </Container>
         </div>
         
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     );
   }

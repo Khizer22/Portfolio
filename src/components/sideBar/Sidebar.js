@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './Sidebar.css';
 import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button';
-
-
 
 class SideBar extends Component {
 
