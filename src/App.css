@@ -31,6 +31,7 @@ p{
   #mainBody{
     padding-left: 0%;
     margin-left: 0px;
-    /* padding-top: 20px; */
+  
+    padding-top: 100px;
   }
 }
