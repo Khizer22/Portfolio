@@ -1,4 +1,29 @@
-/* .App {
-  text-align: center;
+.App {
+  /* text-align: center; */
+  background: linear-gradient(45deg, #16161a, #1a1a20);
 }
- */
+
+/* body{
+  color: #fffffe;
+} */
+
+h1,h2,h3,h4,h5,h5{
+  color:#fffffe;
+}
+
+p{
+  color: #94a1b2;
+}
+
+/* Add media query here for size */
+#mainBody{
+  padding-left: 15%;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainBody{
+    padding-left: 0%;
+    /* padding-top: 20px; */
+  }
+}

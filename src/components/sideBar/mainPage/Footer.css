@@ -1,0 +1,9 @@
+.stayBottom {
+    /* width: 100vh; */
+    /* position:static; */
+    bottom: 0;
+    /* height: 100vh; */
+    z-index: 988;
+    /* background: #1b2436; */
+    /* transition: all 0.3s; */
+}

@@ -7,7 +7,7 @@ import ProjectCards from './ProjectCards';
 
 const CardList = (props) => {
     return (
-        <Row>
+        <Row className='py-5'>
            <Col>
                 <ProjectCards cardImage='https://picsum.photos/id/20/320/200'/>
            </Col>
