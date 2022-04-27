@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Khizer22/portfolio/static/css/main.facb714e.css",
+    "main.js": "/Khizer22/portfolio/static/js/main.47a8635c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Khizer22/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/Khizer22/portfolio/index.html",
+    "main.facb714e.css.map": "/Khizer22/portfolio/static/css/main.facb714e.css.map",
+    "main.47a8635c.js.map": "/Khizer22/portfolio/static/js/main.47a8635c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Khizer22/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.facb714e.css",
+    "static/js/main.47a8635c.js"
+  ]
+}
