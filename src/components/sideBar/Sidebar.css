@@ -5,7 +5,7 @@
 
 .sidebar {
     margin: 0;
-    padding: 0;
+    padding: 4px;
     width: 200px;
     background: #1b2436;
     position: fixed;
@@ -19,7 +19,7 @@
   
   .s-item {
     display: block;
-    padding: 16px;
+    padding: 5px;
     text-decoration: none;
     color: #fffffe;
 
