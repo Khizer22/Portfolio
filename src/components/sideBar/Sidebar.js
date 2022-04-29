@@ -48,13 +48,13 @@ class SideBar extends Component {
 
 
             <div className='wrapper'> 
-                <div className="sidebar text-center">
+                <div className="sidebar text-center ">
 
-                    <p className="fs-4 s-item">Home</p>
+                    <p className="fs-4 s-item">About Me</p>
 
                     <hr />
 
-                    <p className='active s-item'>Projects</p>
+                    <p className='s-item'>Projects</p>
 
                     {this.addImage(faceLife_thumb,'faceLife','Face Life')}
                     {this.addImage(replacementHeads_thumb,'replacementHeads', 'Replacement Heads')}   

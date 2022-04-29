@@ -9,9 +9,10 @@ import { Component } from 'react';
 import FaceLife from './components/pages/faceLife/FaceLife';
 import ReplacementHeads from './components/pages/replacementHeads/ReplacementHeads';
 import Ascendance from './components/pages/ascendance/Ascendance';
+import MainPage from './components/pages/mainPage/MainPage';
 
 const initialState = {
-  route: 'home'
+  route: 'main'
 }
 
 class App extends Component {
@@ -24,9 +25,9 @@ class App extends Component {
   }
 
   onRouteChange = (route) => {
-    if (route === 'home'){
-      this.setState(initialState);
-    } 
+    // if (route === 'home'){
+    //   this.setState(initialState);
+    // } 
     // else if (route === 'facelife'){
     //   this.setState({isSignedIn : true})
     // }
@@ -38,7 +39,10 @@ class App extends Component {
     const {route} = this.state;
 
     switch (route) {
-      case 'home':
+      case 'main':
+        return <MainPage/>;
+        break;
+      case 'aboutMe':
         return <HomePage/>;
         break;
       case 'replacementHeads':
@@ -50,6 +54,12 @@ class App extends Component {
       case 'ascendance':
         return <Ascendance/>;
         break;
+      case 'zedFighter':
+        return <HomePage/>;
+        break;
+      case 'projects':
+          return <HomePage/>;
+          break;
 
       default:
         return <HomePage/>;
@@ -65,11 +75,11 @@ class App extends Component {
         <SideBar onRouteChange={this.onRouteChange}/>
 
         <div id='mainBody'>
-          <Container >
+          {/* <Container > */}
 
             {this.getBody()}
             
-          </Container>
+          {/* </Container> */}
         </div>
         
         {/* <Footer/> */}

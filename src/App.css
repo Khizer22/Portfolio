@@ -21,17 +21,25 @@ p{
   padding-top: 20px;
 } */
 
+#splashImage {
+  padding: 1px 16px;
+}
+
 #mainBody{
   margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
+  padding: 1px 16px; /* This adds padding to all of the content . Need to remove this for splash page only*/
+  /* height: 1000px; */
 }
 
 @media only screen and (max-width: 700px) {
   #mainBody{
-    padding-left: 0%;
+    padding-left: 2px;
     margin-left: 0px;
+
+    padding-right: 2px;
   
     padding-top: 100px;
+
+    overflow-x:hidden;
   }
 }
