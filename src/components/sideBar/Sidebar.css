@@ -10,7 +10,8 @@
     background: #1b2436;
     position: fixed;
     height: 100%;
-    overflow: auto;
+    overflow:auto;
+    overflow-x: hidden;
   }
 
   hr {
@@ -38,6 +39,12 @@
     transform: scale(1.1);
   }
 
+  .active{
+    opacity: 0.5;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
   @media screen and (max-width: 700px) {
     .sidebar {
       height: auto;
@@ -46,6 +53,8 @@
       justify-content: center;
       /* position: relative; //stays fixed*/
       /* overflow: auto; */
+      overflow-y: hidden;
+      overflow-x: auto;
     }
     .s-item {
         float: left; 
@@ -67,17 +76,24 @@
     }
   } */
 
+.i-item{
+  position: relative;
+}
+
+.i-item:hover .text-image{
+  display: block;
+}
+
 .text-image {
     color:#94a1b2;
     background-color: #010101;
-
     font-size: small;
-
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -80%);
     pointer-events:none;
-    width:100%;
-    
+    width:95%;
+
+    display: none;
   }

@@ -18,12 +18,15 @@ class SideBar extends Component {
         return (
             <div className='s-item i-item'>
                 <Image src={url} onClick={() => onRouteChange(newRoute)} fluid rounded />
-                {/* <div className='text-image shadow-lg '>{title}</div> */}
+                <div className='text-image shadow-lg '>{title}</div>
             </div>
         );
     } 
 
     render(){
+
+
+        //need to set function to set class as active on the item that is selected.
 
         return (
 
@@ -31,20 +34,20 @@ class SideBar extends Component {
             <div className='wrapper'> 
                 <div className="sidebar text-center">
 
-                    <p className="active fs-4 s-item">Home</p>
+                    <p className="fs-4 s-item">Home</p>
 
                     <hr />
 
-                    <p className='s-item'>Projects</p>
+                    <p className='active s-item'>Projects</p>
 
                     {this.addImage(faceLife_thumb,'faceLife','Face Life')}
-                    {this.addImage(replacementHeads_thumb,'replacementHeads')}   
+                    {this.addImage(replacementHeads_thumb,'replacementHeads', 'Replacement Heads')}   
                                      
                     <hr />
 
                     <p className='s-item'>Game Projects</p>
                     {this.addImage(ascendance_thumb,'ascendance','Ascendance')}
-                    {this.addImage('https://picsum.photos/id/193/200/120','zedFighter')}
+                    {this.addImage('https://picsum.photos/id/193/200/120','zedFighter', 'Zed Fighter')}
 
                 </div>
             </div>
