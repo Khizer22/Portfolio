@@ -84,6 +84,10 @@
   display: block;
 }
 
+.active .text-image{
+  display: block;
+}
+
 .text-image {
     color:#94a1b2;
     background-color: #010101;

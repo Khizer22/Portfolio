@@ -10,6 +10,8 @@ class SideBar extends Component {
 
     constructor(props){
         super(props);
+
+        const currentSelected = null;
     }
 
     addImage = (url,newRoute,title) => {
@@ -17,7 +19,21 @@ class SideBar extends Component {
 
         return (
             <div className='s-item i-item'>
-                <Image src={url} onClick={() => onRouteChange(newRoute)} fluid rounded />
+                <Image src={url} onClick={(item) => {
+
+                    item.target.parentElement.className += ' active';
+                    // console.log('new selected: ', item)
+
+                    if (this.currentSelected != null){
+                        // console.log('old item: ', this.currentSelected);
+                        const newString = this.currentSelected.target.parentElement.className;
+                        this.currentSelected.target.parentElement.className = newString.replace(' active','');
+                    }
+
+                    this.currentSelected = item;
+
+                    return onRouteChange(newRoute);
+                    }} fluid rounded />
                 <div className='text-image shadow-lg '>{title}</div>
             </div>
         );
