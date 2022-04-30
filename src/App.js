@@ -75,11 +75,11 @@ class App extends Component {
         <SideBar onRouteChange={this.onRouteChange}/>
 
         <div id='mainBody'>
-          {/* <Container > */}
+          <Container id='contain'>
 
             {this.getBody()}
             
-          {/* </Container> */}
+          </Container>
         </div>
         
         {/* <Footer/> */}

@@ -8,10 +8,27 @@ class BasePageInidividual extends React.Component {
 
     constructor(props){
       super(props);
+
+        const title = 'MY TITLE';
+        const subTitle = 'MY SUB TITLE';
+        const linkURL = ['LINK TITLE','<LINK HERE>'];
     }
 
     componentDidMount() {
         window.scrollTo(0, 0);
+    }
+
+    addFirstBodyCol(colSize,title,subTitle,linkURL,releaseDate=null,body){
+        return(
+            <Col xl={colSize} className='fade-in'>
+                <h1 className='text-center font-weight-light' >{title}</h1>
+                <hr/>
+                <h5 className=' font-weight-light'>{subTitle}</h5>
+                <a href={linkURL[1]} target="_blank" className='' style={{margin: 0}}>{linkURL[0]}</a>
+                {releaseDate === null ? null :  <p style={{margin: 0}}>{releaseDate}</p>}
+                <p className='mt-4'>{body}</p>      
+            </Col>
+        );
     }
 
     addBodyCol(colSize,title,subTitle,body){

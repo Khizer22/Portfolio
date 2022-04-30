@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative'); 
+@import url('https://fonts.googleapis.com/css?family=Cinzel'); 
+
+.a-title {
+  font-family: "Cinzel Decorative",monospace;
+  font-weight: 25;
+  text-shadow: 4px 4px 4px rgb(18, 17, 17);
+  color: rgb(195, 229, 230);
+  
+  padding: 10px 0px;
+
+  background: linear-gradient(155deg, #120f1a, #080810);
+}
+
+.a-small-title{
+    font-family: "Cinzel",monospace;
+    font-weight: 15;
+    text-shadow: 4px 4px 4px rgb(18, 17, 17);
+    color: rgb(195, 229, 230);
+    
+    padding: 10px 0px;
+  
+    background: linear-gradient(155deg, #120f1a, #080810);
+}
+
+/* body {
+    font-family: "Cinzel",monospace;
+  } */

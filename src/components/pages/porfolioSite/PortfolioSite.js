@@ -7,8 +7,9 @@ import BasePageInidividual from '../BasePageIndividual';
 import img1 from "./robots_1.png";
 import img2 from "./robots_3.png";
 
-class ReplacementHeads extends BasePageInidividual  {
+class PortfolioSite extends BasePageInidividual  {
 
+    
     
     render(){
     
@@ -37,4 +38,4 @@ class ReplacementHeads extends BasePageInidividual  {
     }
 }
 
-export default ReplacementHeads;
+export default PortfolioSite;

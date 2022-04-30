@@ -6,12 +6,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* background: linear-gradient(45deg, #16161a, #1a1a20); */
 }
 
-html{
-  /* height:100%; */
-  background-color: #16161a;
-}
+html, body{
+  /* width: 100vw; */
+  min-height: 100vh;
+  background: linear-gradient(45deg, #27272e, #24242d);
+} 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
