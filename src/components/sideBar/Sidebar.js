@@ -3,7 +3,8 @@ import './Sidebar.css';
 import Image from 'react-bootstrap/Image';
 import faceLife_thumb from '../pages/faceLife/thumb.png';
 import replacementHeads_thumb from '../pages/replacementHeads/thumb_robots.png';
-import ascendance_thumb from '../pages/ascendance/ascendance_thumb.jpg';
+// import ascendance_thumb from '../pages/ascendance/ascendance_thumb.jpg';
+import ascendance_thumb from '../pages/ascendance/NewSplash3.jpg';
 
 
 class SideBar extends Component {

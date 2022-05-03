@@ -3,7 +3,7 @@
 
 .a-title {
   font-family: "Cinzel Decorative",monospace;
-  font-weight: 25;
+  font-weight: bold;
   text-shadow: 4px 4px 4px rgb(18, 17, 17);
   color: rgb(195, 229, 230);
   
@@ -21,6 +21,19 @@
     padding: 10px 0px;
   
     background: linear-gradient(155deg, #120f1a, #080810);
+}
+
+.splash-image{
+    background: linear-gradient(155deg, #120f1a, #080810);
+}
+
+.small-text{
+  font-size: small;
+  margin: 0
+}
+
+.semi-heading {
+  margin: 0
 }
 
 /* body {
