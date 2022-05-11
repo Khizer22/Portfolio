@@ -7,7 +7,7 @@ import SideBar from './components/sideBar/Sidebar';
 import HomePage from './components/pages/homePage/homePage';
 import { Component } from 'react';
 import FaceLife from './components/pages/faceLife/FaceLife';
-import ReplacementHeads from './components/pages/replacementHeads/ReplacementHeads';
+import PortfolioSite from './components/pages/porfolioSite/PortfolioSite';
 import Ascendance from './components/pages/ascendance/Ascendance';
 import MainPage from './components/pages/mainPage/MainPage';
 
@@ -45,8 +45,8 @@ class App extends Component {
       case 'aboutMe':
         return <HomePage/>;
         break;
-      case 'replacementHeads':
-        return <ReplacementHeads/>;
+      case 'portfolioSite':
+        return <PortfolioSite/>;
         break;
       case 'faceLife':
         return <FaceLife/>;

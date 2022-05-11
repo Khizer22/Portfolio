@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Sidebar.css';
 import Image from 'react-bootstrap/Image';
 import faceLife_thumb from '../pages/faceLife/thumb.png';
-import replacementHeads_thumb from '../pages/replacementHeads/thumb_robots.png';
+import portfolioSite_thumb from '../pages/replacementHeads/thumb_robots.png';
 import ascendance_thumb from '../pages/ascendance/ascendance_thumb.jpg';
 // import ascendance_thumb from '../pages/ascendance/NewSplash3.jpg';
 
@@ -58,13 +58,13 @@ class SideBar extends Component {
                     <p className='s-item'>Projects</p>
 
                     {this.addImage(faceLife_thumb,'faceLife','Face Life')}
-                    {this.addImage(replacementHeads_thumb,'replacementHeads', 'Replacement Heads')}   
+                    {this.addImage(portfolioSite_thumb,'portfolioSite', 'Portfolio Website')}   
                                      
                     <hr />
 
                     <p className='s-item'>Game Projects</p>
                     {this.addImage(ascendance_thumb,'ascendance','Ascendance')}
-                    {this.addImage('https://picsum.photos/id/193/200/120','zedFighter', 'Zed Fighter')}
+                    {this.addImage('https://picsum.photos/id/193/200/120','allProjects', 'All Projects')}
 
                 </div>
             </div>

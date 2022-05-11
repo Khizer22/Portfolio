@@ -4,8 +4,8 @@ import Row from 'react-bootstrap/Row';
 // import Image from 'react-bootstrap/Image';
 import BasePageInidividual from '../BasePageIndividual';
 // import './ReplacementHeads.css'
-import img1 from "./robots_1.png";
-import img2 from "./robots_3.png";
+import img1 from "./a_1.png";
+import img2 from "./a_1.png";
 
 class PortfolioSite extends BasePageInidividual  {
 

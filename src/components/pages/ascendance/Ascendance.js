@@ -83,16 +83,16 @@ class Ascendance extends BasePageInidividual  {
                     <h1 className='text-center a-small-title'>Features</h1>
                 </Row>
 
+                {/* Combo System */}
                 <Row className="justify-content-md-center">
-                    {/* Combo System */}
+                    
                     <Col xl={7} className='fade-in'>                       
                         <h5 className='semi-heading'>Fighting Engine</h5>
                         <p className='small-text'>Input Stream, Move List, Abilities</p>
                         <hr className='hr' />
 
-                        <p>We needed to make a fighting game, and the most fundamental requirement of a fighting game is some sort of an input system. We created an input stream which takes player input every frame and stores it, with an expiry time of 0.25 seconds. With this data, the engine checks every frame for any <i>confirmed moves</i>.</p>
-                        <p>A {move} is nothing more than data stored together that have information about a specific move such as: Animation to play, damage dealt, etc. Each {move} also has <i>linked moves</i> that link to other <i>moves</i> with a specific input. So the input stream is checking every frame if it hit a <i>linked move</i> with it's required input. This is called checking for <i>confirmed moves</i></p>
-                                    
+                        <p>The most fundamental requirement of a fighting game is an input system, so naturally this was the very first thing we created. Ascendance input system consists of 3 things that work in tandem: Input stream, move state, and move links.</p>
+                        <p><i>Input Stream > Move Link > Move State</i></p>
                     </Col>
 
                     <Col xl={5} className='fade-in'>
@@ -101,38 +101,48 @@ class Ascendance extends BasePageInidividual  {
                     </Col>
 
                     <Col xl={7} className='fade-in'>                       
-
-                        <p>We needed to make a fighting game, and the most fundamental requirement of a fighting game is some sort of an input system. We created an input stream which takes player input every frame and stores it, with an expiry time of 0.25 seconds. With this data, the engine checks every frame for any <i>confirmed moves</i>.</p>
-                                    
+                    <p><strong>Input Stream:</strong> The last 0.25 seconds of player input is saved in an input stream.</p>
+                    <p><strong>Move link:</strong> Data that is required to link to another move, such as the required input, when to move to the next link, the cancel window, etc. This link can either link to other move states or other move links.</p> 
+                    <p><strong>Move state:</strong> A state which a character is in. Can only be in 1 state at a time. This state stores information such as, animation to play, damage dealt, speed of attack, etc. Move state also contains move links to other move states.</p> 
                     </Col>
 
-                    <Col xl={5} className='fade-in'> 
+                    <Col xl={5} className='fade-in'>
                         <Image src={img4} fluid rounded  />
-                    </Col>  
+                    </Col>
+ 
                 </Row>
 
+                {/* Lobby */}
                 <Row className="justify-content-md-center">                                 
-                    {/* Lobby */}
                     <Col xl={7} className='fade-in'>                 
                         <h5 className='semi-heading'>Create/Find Game Sessions with Lobbies</h5>
                         <p className='small-text' >Description here</p>
                         <hr className='hr' />
 
-                        <p className='mt-4'>Online game</p>                   
+                        <p className='mt-4'>Ascendance uses online subsystem steam to find and create game sessions. Anyone can create a game session, and after creation, it is seen by all players that are playing this game via steam. After creation, the host moves to the lobby and other players can now join this lobby.</p>                   
+                        <p>In the Lobby, the host can manage the game rules and team members of the game. Only the host is allowed to change game rules, while the client sees real time updates of the game rules that host changes. All players can change their player character, which updates for everyone in the lobby.</p>
+                    
                     </Col>
                     <Col xl={5} className='fade-in'>
                         <Image src={img2} fluid rounded  />
                     </Col>
                 </Row> 
 
+                {/* AI Bots */}
                 <Row className="justify-content-md-center">
-                    {/* AI Bots */}
                     <Col xl={7} className='fade-in'>                        
                         <h5 className='semi-heading'>AI Bots</h5>
                         <p className='small-text' >Description here</p>
                         <hr className='hr' />
 
-                        <p className='mt-4'>Online game</p>                       
+                        <p className='mt-4'>Initially, the game was created as a pure PVP game. I later decided to add AI bots and have co-op elements. There are two types of AI bots in this game:</p>                       
+
+                        <ol>
+                            <li>Campaign Bots: These are bots that resemble the type of AI enemies in regular fighting games that have predictable attacks. They can be slower, have less impactful abilities, and can be beaten in groups. There are also Boss characters that have higher health, bigger attack range, higher damage, and more impactful attacks</li>
+                            <br/>
+                            <li>PVP Bots: These bots are meant to be indistinguishable from human players. They use the same characters that players do. The attacks,combos and abilities are the same as the player characters. Their attacks are unpredictable and they strafe around and dodge attacks, perform complex combos like juggle attacks and canceling into abilities.</li>
+                        </ol>
+                    
                     </Col>
                     <Col xl={5} className='fade-in'>                      
                         <Image src={img3} fluid rounded  />
@@ -160,9 +170,9 @@ class Ascendance extends BasePageInidividual  {
                 </Row>
 
                 <Row className="justify-content-md-center">
-                    {/* SOMEtING ELSE */}
+                    {/* Game Design */}
                     <Col xl={7} className='fade-in'>                       
-                        <h5 className='semi-heading'>SOMEtING ELSE</h5>
+                        <h5 className='semi-heading'>Game Design and Balance</h5>
                         <p className='small-text' >Description here</p>
                         <hr className='hr' />
 
