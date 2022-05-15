@@ -8,8 +8,8 @@ import './Main_Page.css';
 const MainPage = (props) => {
     return (
         
-        <div class="container">
-            <div class="row align-items-center">
+        <div className="container">
+            <div className="row align-items-center">
                 <Row >
                 
                         <h1 className='font-weight-light'>Greetings!</h1>

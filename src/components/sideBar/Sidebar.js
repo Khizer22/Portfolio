@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Sidebar.css';
 import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
 import faceLife_thumb from '../pages/faceLife/thumb.png';
 import portfolioSite_thumb from '../pages/replacementHeads/thumb_robots.png';
 import ascendance_thumb from '../pages/ascendance/ascendance_thumb.jpg';
@@ -15,12 +16,12 @@ class SideBar extends Component {
         const currentSelected = null;
     }
 
-    addImage = (url,newRoute,title) => {
+    addImage = (url,newRoute,title, fontClass='') => {
         const {onRouteChange} = this.props;
 
         return (
             <div className='s-item i-item'>
-                <Image src={url} onClick={(item) => {
+                <Image className='my-image' src={url} onClick={(item) => {
 
                     item.target.parentElement.className += ' active';
                     // console.log('new selected: ', item)
@@ -35,7 +36,7 @@ class SideBar extends Component {
 
                     return onRouteChange(newRoute);
                     }} fluid rounded />
-                <div className='text-image shadow-lg '>{title}</div>
+                <div className={`text-image shadow-lg bright-text ${fontClass}`}>{title}</div>
             </div>
         );
     } 
@@ -55,16 +56,14 @@ class SideBar extends Component {
 
                     <hr />
 
-                    <p className='s-item'>Projects</p>
+                    <p className="fs-5 s-item bright-text">My Projects</p>
 
+                    
                     {this.addImage(faceLife_thumb,'faceLife','Face Life')}
-                    {this.addImage(portfolioSite_thumb,'portfolioSite', 'Portfolio Website')}   
-                                     
-                    <hr />
+                    {this.addImage(ascendance_thumb,'ascendance','Ascendance','ascendance-font-big')}
+                    {this.addImage(portfolioSite_thumb,'portfolioSite', 'Portfolio Website')}                           
+                    {this.addImage('https://picsum.photos/id/193/200/120','projects', 'All Projects')}
 
-                    <p className='s-item'>Game Projects</p>
-                    {this.addImage(ascendance_thumb,'ascendance','Ascendance')}
-                    {this.addImage('https://picsum.photos/id/193/200/120','allProjects', 'All Projects')}
 
                 </div>
             </div>

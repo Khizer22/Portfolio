@@ -11,7 +11,7 @@ const HomePage = (props) => {
             <Row className=''>
                 <Col sm={5}>
                     <h1 className=''>About Me</h1>
-                    <h5 className='font-weight-light'>Hello!</h5>
+                    <h5 className='font-weight-light'>Hello! Page coming soon!</h5>
                     <p className='mt-4'>Turtles are cool.</p>
                 </Col>
                 <Col sm={7}>

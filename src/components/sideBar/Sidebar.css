@@ -6,7 +6,7 @@
 .sidebar {
     margin: 0;
     padding: 4px;
-    width: 200px;
+    width: 300px;
     background: #1b2436;
     position: fixed;
     height: 100%;
@@ -21,10 +21,16 @@
     opacity: 0;
     /* pointer-events:none; */
     /* visibility: hidden; */
+
+    z-index: 99;
   }
 
   hr {
       color:white;
+  }
+
+  .bright-text {
+    color:#fffffe;
   }
   
   .s-item {
@@ -43,7 +49,7 @@
   } */
   
   .s-item:hover:not(.active) {
-    opacity: 0.5;
+    /* opacity: 0.5; */
     cursor: pointer;
     transform: scale(1.1);
   }
@@ -52,6 +58,57 @@
     opacity: 0.5;
     cursor: pointer;
     transform: scale(1.1);
+  }
+
+.i-item{
+  position: relative;
+}
+
+.i-item:hover .text-image{
+  display: block;
+}
+
+.active .text-image{
+  display: block;
+}
+
+/* .my-image{
+  padding-bottom: 20px;
+} */
+
+.text-image {
+    /* color:#94a1b2; */
+    background-color: #010101;
+    font-size: small;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    pointer-events:none;
+    width:69%;
+
+    display: none;
+  }
+  
+  @keyframes fadeSlideIn {
+    0% {
+        opacity:0;
+        transform: translate(-50px,0px);
+    }
+    100% {
+        opacity:1;
+        /* visibility: visible; */
+        transform: translate(0px,0px);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .sidebar{
+      width:200px;
+    }
+    .text-image {
+      width:100%;
+    }
   }
 
   @media screen and (max-width: 700px) {
@@ -75,50 +132,21 @@
     .i-item{
         max-width:110px;
     }
+    /* .my-image{
+      padding-bottom: 0px;
+    } */
     /* div.content {margin-left: 0;} */
   }
-  
-  /* @media screen and (max-width: 600px) {
-    .i-item{
-        max-width:150px;
-        max-height:50px;
-    }
-  } */
 
-.i-item{
-  position: relative;
+  /* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative'); 
+@import url('https://fonts.googleapis.com/css?family=Cinzel'); 
+
+.ascendance-font{
+  font-family: "Cinzel",monospace;
 }
 
-.i-item:hover .text-image{
-  display: block;
+.ascendance-font-big{
+  font-family: "Cinzel Decorative",monospace;
 }
-
-.active .text-image{
-  display: block;
-}
-
-.text-image {
-    color:#94a1b2;
-    background-color: #010101;
-    font-size: small;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -80%);
-    pointer-events:none;
-    width:95%;
-
-    display: none;
-  }
-  
-  @keyframes fadeSlideIn {
-    0% {
-        opacity:0;
-        transform: translate(-50px,0px);
-    }
-    100% {
-        opacity:1;
-        /* visibility: visible; */
-        transform: translate(0px,0px);
-    }
-  }

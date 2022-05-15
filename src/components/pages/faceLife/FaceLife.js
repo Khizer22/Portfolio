@@ -14,7 +14,7 @@ class FaceLife extends BasePageInidividual  {
     
         return (
             
-            <div >
+            <div>
                 
                 {this.addSplashPage(img1)}
 

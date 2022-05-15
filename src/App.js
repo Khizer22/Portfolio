@@ -15,6 +15,8 @@ const initialState = {
   route: 'main'
 }
 
+const tempDisabledPages = ['aboutMe','portfolioSite','faceLife','projects']
+
 class App extends Component {
 
   constructor(props){
@@ -73,6 +75,14 @@ class App extends Component {
 
         {/* <Header/> */}
         <SideBar onRouteChange={this.onRouteChange}/>
+
+        {tempDisabledPages.includes(this.state.route) ? 
+          <div className='coming-soon1'>
+            <h1>PAGE COMING SOON</h1>
+          </div>
+          : 
+          <div></div>
+        }
 
         <div id='mainBody'>
           <Container id='contain'>
