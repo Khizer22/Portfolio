@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Kdam+Thmor+Pro'); 
+
+.f-title {
+  font-family: "Kdam Thmor Pro",monospace;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px rgb(18, 17, 17);
+  color: rgb(195, 229, 230);
+  
+  padding: 10px 0px;
+
+  background: linear-gradient(155deg, #120f1a, #080810);
+}
+
+.f-small-title{
+    font-family: "Kdam Thmor Pro",monospace;
+    font-weight: 15;
+    text-shadow: 4px 4px 4px rgb(18, 17, 17);
+    color: rgb(195, 229, 230);
+    
+    padding: 10px 0px;
+  
+    background: linear-gradient(155deg, #120f1a, #080810);
+}
