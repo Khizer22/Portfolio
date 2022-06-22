@@ -16,13 +16,13 @@ const MainPage = (props) => {
             </Row> */}
             
             
-            <Row className="container">
+            <div className="container">
                 <div className="row align-items-center">
 
-                    <Col  xl={12}>
-                        <h1 className='font-weight-light'>Greetings!</h1>
-                        <h1 className='font-weight-light'>I am Khizer Mahboob.</h1>
-                    </Col>  
+                    {/* <Col  xl={12}> */}
+                    <h1 className='font-weight-light'>Greetings!</h1>
+                    <h1 className='font-weight-light'>I am Khizer Mahboob.</h1>
+                    {/* </Col>   */}
                     {/* <Col  xl={5}> */}
                         {/* <div className='delay-text header-css'>
                             <a href='https://github.com/khizer22' target="_blank" className='small-text'><img id='l-logo' alt='linkedin logo' src={g_img} width='20px'/>Khizer22</a>
@@ -41,7 +41,7 @@ const MainPage = (props) => {
 
                     
                 </div>
-            </Row>
+            </div>
         </div>
     );
 }

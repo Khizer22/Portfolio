@@ -165,8 +165,9 @@
       display: none;
     }
     .header-css{
-      padding:5px;
+      padding:0px;
       display: block;
+      height:auto;
     }
     /* .my-image{
       padding-bottom: 0px;
