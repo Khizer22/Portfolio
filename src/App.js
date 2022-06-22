@@ -10,12 +10,13 @@ import FaceLife from './components/pages/faceLife/FaceLife';
 import PortfolioSite from './components/pages/porfolioSite/PortfolioSite';
 import Ascendance from './components/pages/ascendance/Ascendance';
 import MainPage from './components/pages/mainPage/MainPage';
+import AboutMe from './components/pages/about_me/about_me';
 
 const initialState = {
   route: 'main'
 }
 
-const tempDisabledPages = ['aboutMe','portfolioSite','projects']
+const tempDisabledPages = ['portfolioSite','projects']
 
 class App extends Component {
 
@@ -42,10 +43,10 @@ class App extends Component {
 
     switch (route) {
       case 'main':
-        return <MainPage/>;
+        return <AboutMe/>;
         break;
       case 'aboutMe':
-        return <HomePage/>;
+        return <AboutMe/>;
         break;
       case 'portfolioSite':
         return <PortfolioSite/>;

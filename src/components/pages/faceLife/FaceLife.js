@@ -54,7 +54,7 @@ class FaceLife extends BasePageInidividual  {
                 
                     <Col xl={7} className='fade-in'>
               
-                        <h5 className='semi-heading'>What is this?</h5>
+                        <h5 className='f-semi-heading'>What is this?</h5>
                         <a href={linkURL[1]} target="_blank" className='small-text'>{linkURL[0]}</a>
                         <p className='small-text' >React, Express.js, knex.js, PostgreSQL</p>
                         
@@ -85,7 +85,7 @@ class FaceLife extends BasePageInidividual  {
                 <Row className="justify-content-md-center">
                     
                     <Col xl={7} className='fade-in'>                       
-                        <h5 className='semi-heading'>Front End</h5>
+                        <h5 className='f-semi-heading'>Front End</h5>
                         <p className='small-text'>React, CSS Grid, Flexbox</p>
                         <hr className='hr' />
 
@@ -102,7 +102,7 @@ class FaceLife extends BasePageInidividual  {
                 {/* Lobby */}
                 <Row className="justify-content-md-center">                                 
                     <Col xl={7} className='fade-in'>                 
-                        <h5 className='semi-heading'>Back End</h5>
+                        <h5 className='f-semi-heading'>Back End</h5>
                         <p className='small-text' >Node,Express.js,Knex</p>
                         <hr className='hr' />
 
@@ -117,7 +117,7 @@ class FaceLife extends BasePageInidividual  {
                 {/* AI Bots */}
                 <Row className="justify-content-md-center">
                     <Col xl={7} className='fade-in'>                        
-                        <h5 className='semi-heading'>Database</h5>
+                        <h5 className='f-semi-heading'>Database</h5>
                         <p className='small-text' >PostgreSQL</p>
                         <hr className='hr' />
 
@@ -137,7 +137,7 @@ class FaceLife extends BasePageInidividual  {
                 <Row className="justify-content-md-center">
                     {/* Network */}
                     <Col xl={7} className='fade-in'>                       
-                        <h5 className='semi-heading'>Design Challenges</h5>
+                        <h5 className='f-semi-heading'>Design Challenges</h5>
                         <p className='small-text' >Description here</p>
                         <hr className='hr' />
 
@@ -152,7 +152,7 @@ class FaceLife extends BasePageInidividual  {
                 <Row className="justify-content-md-center">
                     {/* Game Design */}
                     <Col xl={7} className='fade-in'>                       
-                        <h5 className='semi-heading'>Node Modules</h5>
+                        <h5 className='f-semi-heading'>Node Modules</h5>
                         <p className='small-text' >Description here</p>
                         <hr className='hr' />
 

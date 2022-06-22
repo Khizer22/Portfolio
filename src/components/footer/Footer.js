@@ -5,12 +5,12 @@ import './Footer.css';
 const Footer = (props) => {
     return (
         
-        <footer className='py-5 bg-dark stayBottom'>
-            <Container className='px-4'>
+        <footer className='stayBottom'>
+            <div className='px-4'>
                 <p className='text-center text-white'>
                     Copywright &copy; Khizer Mahboob 2022
                 </p>
-            </Container>
+            </div>
         </footer>
         
     );

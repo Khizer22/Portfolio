@@ -10,16 +10,36 @@ const MainPage = (props) => {
         
         <div className="container">
             <div className="row align-items-center">
-                <Row >
-                
-                        <h1 className='font-weight-light'>Greetings!</h1>
-                        <h1 className='font-weight-light'>I am Khizer Mahboob.</h1>
-                        <p className='mt-4'id='delay-text'> Take a look at my projects.</p>
-                        {/* <Button variant='outline-primary'>HELLO</Button> */}
-                    
-                        <Image src='https://picsum.photos/900/400' fluid rounded id='delay-splash' />
+            
+                {/* <h5 id='myRole' className='font-weight-light'>Software Developer</h5>    */}
 
-                </Row>
+                
+            
+                <h1 className='font-weight-light'>Greetings!</h1>
+                <h3 className='font-weight-light'>I am Khizer Mahboob</h3>
+                {/* <h5 id='myRole' className='font-weight-light'>Software Developer</h5> */}
+                <p className='mt-4 delay-text'>Take a look at my projects.</p>
+                {/* <Button variant='outline-primary'>HELLO</Button> */}
+            
+                <Image src='https://media-exp1.licdn.com/dms/image/C5603AQFaB6Bi-ahMuQ/profile-displayphoto-shrink_200_200/0/1526326293383?e=1661385600&v=beta&t=IyILXw9qE55D0T0mZg728EmibFzsGwWH7W7tWCHRgSU' fluid rounded id='delay-splash' />
+
+                        
+
+                
+                {/* <Row> */}
+                    {/* <Image src='https://media-exp1.licdn.com/dms/image/C5603AQFaB6Bi-ahMuQ/profile-displayphoto-shrink_200_200/0/1526326293383?e=1661385600&v=beta&t=IyILXw9qE55D0T0mZg728EmibFzsGwWH7W7tWCHRgSU' fluid rounded id='delay-splash' /> */}
+
+                    {/* <Col xl={4} >
+                        <Image src='https://media-exp1.licdn.com/dms/image/C5603AQFaB6Bi-ahMuQ/profile-displayphoto-shrink_200_200/0/1526326293383?e=1661385600&v=beta&t=IyILXw9qE55D0T0mZg728EmibFzsGwWH7W7tWCHRgSU' fluid rounded id='delay-splash' />
+                    </Col>
+                    <Col xl={8}>
+                        <p>Hablo Espaneol</p>
+                    </Col> */}
+                {/* </Row> */}
+                
+                
+                <p className='mt-4 delay-text'>KHIZER MAHBOOB WITH EXPERIANCE AM COOL GUY HIRE ME PLZ</p>
+                 
             </div>
         </div>
     );

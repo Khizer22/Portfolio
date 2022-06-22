@@ -21,3 +21,8 @@
   
     background: linear-gradient(155deg, #120f1a, #080810);
 }
+
+.f-semi-heading {
+  margin: 0;
+  font-family: "Kdam Thmor Pro",monospace;
+}

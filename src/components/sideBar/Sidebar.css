@@ -25,6 +25,19 @@
     z-index: 99;
   }
 
+  .text-image-selector{
+
+    /* border: 3px solid rgb(17, 7, 46); */
+    border-radius: 10px;
+    background: linear-gradient(45deg, #2d2d35, #441d46);
+    
+    margin: auto;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    max-width: 210px;
+    /* color:#b693934d; */
+  }
+
   hr {
       color:white;
   }
@@ -149,4 +162,24 @@
 
 .ascendance-font-big{
   font-family: "Cinzel Decorative",monospace;
+}
+
+.header-css{
+  bottom:0;
+  color: rgb(114, 149, 184);
+  padding: 5px;
+  /* width: 100%;
+  height:65px;
+  text-align: center; */
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center;  */
+  /* flex-direction: column; */
+  /* flex-flow: row wrap;  */
+  /* background-color: rgba(227, 240, 255, 0.1); */
+}
+
+a {
+  text-decoration: none;
+  color: #94a1b2;
 }

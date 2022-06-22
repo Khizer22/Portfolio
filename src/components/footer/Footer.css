@@ -2,8 +2,10 @@
     /* width: 100vh; */
     /* position:static; */
     bottom: 0;
+    padding-top: 6px;
     /* height: 100vh; */
     z-index: 988;
+    background-color: rgb(10, 23, 34);
     /* background: #1b2436; */
     /* transition: all 0.3s; */
 }
