@@ -19,17 +19,17 @@ const MainPage = (props) => {
             <Row className="container">
                 <div className="row align-items-center">
 
-                    <Col  xl={7}>
+                    <Col  xl={12}>
                         <h1 className='font-weight-light'>Greetings!</h1>
                         <h1 className='font-weight-light'>I am Khizer Mahboob.</h1>
                     </Col>  
-                    <Col  xl={5}>
+                    {/* <Col  xl={5}> */}
                         {/* <div className='delay-text header-css'>
                             <a href='https://github.com/khizer22' target="_blank" className='small-text'><img id='l-logo' alt='linkedin logo' src={g_img} width='20px'/>Khizer22</a>
                             <a href='https://ca.linkedin.com/in/khizermahboob' target="_blank" className='small-text'><img id='l-logo' alt='linkedin logo' src={l_img} width='20px'/>Khizer Mahboob</a>
                         </div> */}
                         
-                    </Col> 
+                    {/* </Col>  */}
 
                     {/* <h5 id='myRole' className='font-weight-light'>Software Developer</h5> */}
                     <p className='mt-4 delay-text'>Take a look at my projects.</p>

@@ -72,18 +72,23 @@ class SideBar extends Component {
                     {/* {this.addImage('https://media-exp1.licdn.com/dms/image/C5603AQFaB6Bi-ahMuQ/profile-displayphoto-shrink_200_200/0/1526326293383?e=1661385600&v=beta&t=IyILXw9qE55D0T0mZg728EmibFzsGwWH7W7tWCHRgSU','aboutMe', 'About Me')} */}
 
                     <hr />
- 
-                    {this.addImage(faceLife_thumb,'faceLife','Face Life')}
+
+                    <p className="fs-5 bright-text title-text">My Projects</p>
+                    {this.addImage(faceLife_thumb,'faceLife','Face Life','face-life-font')}
                     {this.addImage(ascendance_thumb,'ascendance','Ascendance','ascendance-font-big')}
                     {this.addImage(portfolioSite_thumb,'portfolioSite', 'Portfolio Website')}                           
                     {this.addImage('https://picsum.photos/id/193/200/120','projects', 'All Projects')}
 
-                    {/* <p className="text-image-selector fs-5 s-item bright-text">All Projects</p> */}
+                    
 
                     <hr/>
-                     <div className='delay-text header-css'>
-                        <a href='https://github.com/khizer22' target="_blank" className='small-text'><img id='l-logo' alt='linkedin logo' src={g_img} width='40px'/></a>
-                        <a href='https://ca.linkedin.com/in/khizermahboob' target="_blank" className='small-text'><img id='l-logo' alt='linkedin logo' src={l_img} width='40px'/></a>
+                    <div className='delay-text header-css'>
+                        <div>
+                            <a href='https://github.com/khizer22' target="_blank" className='about-me-link'><img id='l-logo' alt='linkedin logo' src={g_img} width='20px'/></a>
+                            <span>   </span>
+                            <a href='https://ca.linkedin.com/in/khizermahboob' target="_blank" className='about-me-link'><img id='l-logo' alt='linkedin logo' src={l_img} width='20px'/></a>
+                        </div>
+                        <div className='title-text'>Social Platforms:</div>
                     </div>
 
 

@@ -85,6 +85,22 @@
   display: block;
 }
 
+.header-css{
+  bottom:0;
+  color: rgb(114, 149, 184);
+  padding: 5px;
+  padding-top: 50px;
+  /* width: 100%;*/
+  height: calc(100vh - 700px);
+  /* text-align: center;  */
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: flex-end;  */
+  flex-direction: column-reverse;
+  /* flex-flow: row wrap;  */
+  /* background-color: rgba(227, 240, 255, 0.1); */
+}
+
 /* .my-image{
   padding-bottom: 20px;
 } */
@@ -136,14 +152,21 @@
       overflow-x: auto;
     }
     .s-item {
-        float: left; 
-        padding: 1px;
+      float: left; 
+      padding: 1px;
     }
     .s-item:not(.i-item) ,hr {
-        display: none;
+      display: none;
     }
     .i-item{
-        max-width:110px;
+      max-width:110px;
+    }
+    .title-text{
+      display: none;
+    }
+    .header-css{
+      padding:5px;
+      display: block;
     }
     /* .my-image{
       padding-bottom: 0px;
@@ -155,6 +178,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative'); 
 @import url('https://fonts.googleapis.com/css?family=Cinzel'); 
+@import url('https://fonts.googleapis.com/css?family=Kdam+Thmor+Pro'); 
 
 .ascendance-font{
   font-family: "Cinzel",monospace;
@@ -164,22 +188,11 @@
   font-family: "Cinzel Decorative",monospace;
 }
 
-.header-css{
-  bottom:0;
-  color: rgb(114, 149, 184);
-  padding: 5px;
-  /* width: 100%;
-  height:65px;
-  text-align: center; */
-  display: flex;
-  justify-content: space-evenly;
-  /* align-items: center;  */
-  /* flex-direction: column; */
-  /* flex-flow: row wrap;  */
-  /* background-color: rgba(227, 240, 255, 0.1); */
+.face-life-font{
+  font-family: "Kdam Thmor Pro",monospace;
 }
 
-a {
+.about-me-link {
   text-decoration: none;
   color: #94a1b2;
 }
