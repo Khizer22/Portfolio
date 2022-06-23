@@ -8,16 +8,30 @@
     animation: 0.5s ease-out 0.5s 1 normal forwards running fadeIn;    
 
     opacity: 0;
-    /* max-width: 500px; */
+    max-width: 400px;
     /* min-width: 250px; */
     height: auto;
+    border-radius: 50%;
 
     /* padding-left: 0px !important; */
     /* padding-right: 0px !important; */
 }
 
+.blurb{
+    color:rgb(184, 191, 214);
+    font-style: italic;
+}
+
+.blurb-inside{
+    color:rgb(127, 121, 207);
+}
+
 #myRole{
     color:grey;
+}
+
+#title-text{
+    padding-bottom: 50px;
 }
 
 @keyframes fadeIn {
@@ -29,5 +43,11 @@
         opacity:1;
         /* visibility: visible; */
         /* transform: translate(0px,0px); */
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    #delay-splash{
+        max-width: 200px;
     }
   }
