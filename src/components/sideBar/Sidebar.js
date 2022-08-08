@@ -77,7 +77,7 @@ class SideBar extends Component {
                     {this.addImage(faceLife_thumb,'faceLife','Face Life','face-life-font')}
                     {this.addImage(ascendance_thumb,'ascendance','Ascendance','ascendance-font-big')}
                     {this.addImage(portfolioSite_thumb,'portfolioSite', 'Portfolio Website')}                           
-                    {this.addImage('https://picsum.photos/id/193/200/120','projects', 'All Projects')}
+                    {this.addImage('https://picsum.photos/id/193/200/120','projects', 'Other Projects')}
 
                     
 

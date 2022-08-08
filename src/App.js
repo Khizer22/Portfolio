@@ -16,7 +16,7 @@ const initialState = {
   route: 'main'
 }
 
-const tempDisabledPages = ['portfolioSite','projects']
+const tempDisabledPages = ['portfolioSite']
 
 class App extends Component {
 

@@ -2,22 +2,29 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import './homePage.css'
-
+import CardList from '../../cards/CardList';
+import './homePage.css';
 const HomePage = (props) => {
     return (
         
         <div>
-            <Row className=''>
-                <Col sm={5}>
-                    <h1 className=''>About Me</h1>
-                    <h5 className='font-weight-light'>Hello! Page coming soon!</h5>
-                    <p className='mt-4'>Turtles are cool.</p>
-                </Col>
-                <Col sm={7}>
-                    <Image src='https://picsum.photos/900/400' fluid rounded className='' />
-                </Col>
-            </Row>
+            <div className="container">
+                <div className="row align-items-center">
+
+                    <Col  xl={12} align='center' id='title-text'>
+                        <h1 className='font-weight-light'>Other Projects</h1>
+                    </Col>  
+                        
+                    {/* <Col xl={6} align="center">
+                        <Image src={k_img} fluid id='delay-splash' />
+                    </Col> */}
+                    <CardList />
+                    
+                </div>
+            </div>
+
+
+            
         </div>
         
     );
